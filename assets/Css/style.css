@@ -420,10 +420,6 @@ figcaption {
     .historyBtn button {
         text-align: center;
     }
-
-    .headFont {
-        font-size: 40px;
-    }
 }
 
 @media(prefers-reduced-motion: no-preference) {
