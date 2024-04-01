@@ -374,7 +374,7 @@ figcaption {
 }
 
 /* CSS rules specific to iPads go here */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
     .heroHeading {
         text-align: center;
     }
@@ -418,5 +418,24 @@ figcaption {
 
     .historyBtn button {
         text-align: center;
+    }
+}
+
+@media(prefers-reduced-motion: no-preference) {
+
+    .card {
+        scale: .8;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: entry 20px;
+    }
+
+    @keyframes fade-in {
+
+        to {
+            scale: 1;
+            opacity: 1;
+        }
     }
 }
