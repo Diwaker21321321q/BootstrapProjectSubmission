@@ -304,6 +304,12 @@ figcaption {
 
 /* media query for phone */
 @media screen and (max-width: 768px) {
+
+    .hero_section::before,
+    .ChefProfile::before {
+        background-image: linear-gradient(183deg, rgb(59 118 61) 0%, rgb(85 175 76 / 0%) 100%);
+    }
+
     .hiddenBox {
         display: block !important;
     }
