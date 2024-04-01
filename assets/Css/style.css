@@ -1,0 +1,416 @@
+* {
+    font-family: "Poppins", serif;
+    list-style-type: none;
+}
+
+/* common css class start from here  */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.headFont {
+    font-family: "Berkshire Swash", serif;
+}
+
+.nav_parent {
+    background-color: #3B763D;
+}
+
+.navbar-brand img {
+    bottom: 3px;
+}
+
+.navFont {
+    font-size: 19px;
+}
+
+.bgRepeat {
+    background-repeat: no-repeat;
+}
+
+.BeforeClass::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    z-index: -1;
+}
+
+.starCards {
+    background-color: transparent !important;
+}
+
+.cardhover,
+.pricehover {
+    transition: 0.16s linear;
+}
+
+.cardhover:hover {
+    transform: scale(0.99);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* navbar css section part start from here  */
+.btnEffect {
+    transition: 0.1s linear;
+}
+
+.test:hover {
+    color: #35793c !important;
+}
+
+.btnEffect::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    z-index: -1;
+    background-color: #F0CB37;
+    transition: 0.5s;
+}
+
+.test::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.test:hover::before {
+    height: 170%;
+}
+
+/* hero section css part start from here  */
+.hero_section {
+    background-color: #57AE4E;
+    background-image: url("../images/herosection_bg_img.png"), url("../images/herosection_bg_img.png");
+    background-position: left 584px bottom 249px, left 902px top 128px;
+    background-size: 54% 100%, 56% 100%;
+    z-index: 1;
+}
+
+.hero_section::before {
+    background-image: linear-gradient(45deg, rgb(59 118 61) 0%, rgb(85 175 76 / 0%) 100%);
+}
+
+.heroSubHead {
+    padding-left: 4.3rem;
+}
+
+.heroHead {
+    line-height: 0.7;
+    font-size: 5.5rem;
+}
+
+.heroPara {
+    text-align: justify;
+}
+
+.heroBtn {
+    color: #35793c;
+}
+
+.bookNowBtn {
+    position: relative;
+}
+
+.bookNowBtn::before {
+    background-color: #F0CB37;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.bookNowBtn:hover::before {
+    transform: scaleX(1.2) scaleY(1.6);
+    opacity: 0;
+}
+
+.bookNowBtn:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+.bookNowBtn:active {
+    transform: translateY(-2px);
+}
+
+/* about section css part start from  here  */
+.aboutUsSection {
+    padding: 7rem 0rem;
+    background-color: #559a4e;
+    background-image: linear-gradient(90deg, rgb(62 121 65) 0%, rgb(90 179 80) 100%);
+}
+
+.aboutContent {
+    border-bottom-left-radius: 300px;
+    border-top-left-radius: 300px;
+    background-color: #F0CB37;
+}
+
+.aboutContent img {
+    left: 28%;
+    filter: drop-shadow(-26px 44px 28px rgba(0, 0, 0, 0.6));
+}
+
+.aboutbtn {
+    background-color: #fff !important;
+    padding: 8px 60px;
+}
+
+
+/* star section css part start from here  */
+.starSection,
+.testimonial {
+    background-color: #3b763d;
+}
+
+.rotateimg {
+    font-size: 17px;
+}
+
+.rotateimg {
+    animation: rotatestar 4s linear infinite;
+}
+
+@keyframes rotatestar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* chef section css part start from here  */
+.ChefProfile {
+    background-image: url("../images/ChefPattern.png"), url("../images/ChefPattern.png"), url("../images/ChefPattern.png"), url("../images/ChefPattern.png"), url("../images/chefLast.png"), url("../images/chefLast.png"), url("../images/chefLast.png");
+    background-color: #4b8f48;
+    background-size: 30% 36%, 30% 36%, 30% 36%, 30% 36%, 33% 8%, 33% 8%, 35% 8%;
+    background-position: left 0px top -129px, left 374px top -129px, right 135px top -129px, right -241px top -129px, bottom 0px left 0px, bottom 0px left 414px, bottom 0px right -7px;
+    z-index: 1;
+}
+
+.ChefProfile::before {
+    background-image: linear-gradient(200deg, rgb(75 150 67 / 68%) 0%, rgb(67 130 69 / 64%) 100%);
+}
+
+.chef1 {
+    transform: scale(1.4);
+    right: 10%;
+    transition: 0.5s all;
+}
+
+.chefImg:hover .chefhover {
+    transform: scale(1.5);
+}
+
+.chefImg:hover figcaption {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+
+}
+
+figcaption {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.chef2 {
+    top: 73px;
+    transform: scale(1.39);
+    transition: 0.5s all;
+}
+
+.chefP {
+    background-color: #3b763d;
+}
+
+.lineHeight {
+    letter-spacing: 1.3px;
+    line-height: 0.9;
+}
+
+.cardShadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* historySection css part start here  */
+.historySection {
+    background-image: url("../images/historyimgleft.png"), url("../images/historyimgright.png"), url("../images/historyimgleft.png"), url("../images/historyimgright.png");
+    background-position: left 0px, right 0px, left 274px, right 274px;
+    background-size: 6% 57%;
+    background-color: #f39916;
+}
+
+.Historyimg {
+    filter: drop-shadow(-6px 13px 11px rgba(0, 0, 0, 0.6));
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+}
+
+.dot:hover {
+    cursor: pointer;
+    outline: 1.5px solid white;
+    outline-offset: 4px;
+}
+
+/* testimonials css part start here  */
+.testimonialFooter {
+    background-image: url("../images/Testimonialimg.png"), url("../images/Testimonialimg.png");
+    background-size: 50% 50%;
+    background-position: left 0px bottom 0px, right 0px bottom 0px;
+    background-color: #58ae50;
+}
+
+/* MenuCard css part start here  */
+.MenuSection {
+    background-color: #F0CB37;
+}
+
+.menupara {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.menuCards {
+    background-image: url("../images/Testimonialimg.png"), url("../images/Testimonialimg.png");
+    background-size: 50% 4%;
+    background-position: left 0px top 0px, right 0px top 0px;
+    background-color: hsl(117, 34%, 44%);
+    z-index: 1;
+}
+
+.menuCards::before {
+    top: 37px;
+    background-image: linear-gradient(147deg, rgb(72 137 70) 5%, rgb(90 179 80) 100%);
+}
+
+.emailInput {
+    border: 2px solid #35793c;
+}
+
+/* media query for phone */
+@media screen and (max-width: 768px) {
+    .hiddenBox {
+        display: block !important;
+    }
+
+    .showBox,
+    .historyHead {
+        display: none;
+    }
+
+    .heroHead {
+        font-size: 4.5rem;
+    }
+
+    .heroSectionContainer {
+        padding-bottom: 2rem !important;
+    }
+
+    .heroSubHead,
+    .heroHead {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .star {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ChefProfile {
+        background-image: url("../images/chefLast.png");
+        background-size: 101% 4%;
+        background-position: left 0 bottom 0;
+    }
+
+    .historySection,
+    .menuCards,
+    .hero_section {
+        background-image: none;
+    }
+
+    .justify {
+        text-align: justify !important;
+    }
+
+    .menupara {
+        font-size: 22px;
+    }
+
+    .menuDesc,
+    .menuCardimg,
+    .aboutPara {
+        width: 100% !important;
+    }
+
+    .aboutContent {
+        border-radius: 0;
+    }
+
+    .aboutUsSection {
+        padding: 0rem 0rem 1rem 0rem;
+    }
+}
+
+/* CSS rules specific to iPads go here */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .heroHeading {
+        text-align: center;
+    }
+
+    .hiddenBox {
+        display: block !important;
+    }
+
+    .showBox,
+    .historyHead {
+        display: none;
+    }
+
+    .heroHead {
+        font-size: 6.5rem;
+    }
+
+    .hero_section {
+        background-image: url("../images/herosection_bg_img.png");
+        background-position: left 509px top -310px;
+        background-size: 70% 70%;
+    }
+
+    .aboutPara,
+    .menuCardimg {
+        width: 100% !important;
+    }
+
+    .navFont {
+        font-size: 13px;
+    }
+
+    .ipadCards {
+        width: 25rem !important;
+    }
+
+    .ChefProfile,
+    .historySection {
+        background-image: none;
+    }
+
+    .historyBtn button {
+        text-align: center;
+    }
+}
